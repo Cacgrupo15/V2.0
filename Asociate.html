@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asociate</title>
+  <link rel="stylesheet" href="estilos/Asociate.css">
+  <link rel="stylesheet" href="estilos/Beneficios.css">
+  <link rel="stylesheet" href="estilos/General.css">
+  <link rel="stylesheet" href="estilos/Vinos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <div class="header-logo">
+      <a href="Home.html">
+        <img src="img/grape.png" alt="">
+      </a>
+    </div>
+    <div class="header-menu">
+      <nav>
+        <ul>
+          <li><a href="Vinos.html">Vinos</a></li>
+          <li><a href="Beneficios.html">Beneficios</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-boton">
+      <a class="btn" href="Asociate.html">¡Asociate!</a>
+    </div>
+  </header>
+
+  <h1> Formulario de contacto </h1>
+
+  <div class="content">
+
+    <div class="form-content">
+
+      <form autocomplete="none" name="validation">
+
+        <div class="input-group">
+          <div class="menuAsociate">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="nombre" maxlength="50" placeholder="Nombre">
+          </div>
+          <div class="menuAsociate">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="apellido" maxlength="50" placeholder="Apellido">
+          </div>
+          <div class="menuAsociate">
+            <i class="fa-solid fa-drivers-license"></i>
+            <input type="text" name="dni" maxlength="18" placeholder="DNI">
+          </div>
+        
+          <div class="menuAsociate">
+            <i class="fa-solid fa-mail-bulk"></i>
+            <input type="mail" placeholder="Correo electrónico">
+          </div>
+          <div class="menuAsociate">
+            <i class="fa-solid fa-phone-square"></i>
+            <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required>
+          </div>
+        </div>
+        <div class="btn-sec">
+          <input type="button" value="Enviar" onclick="validateShipment()">
+        </div>
+
+      </form>
+
+
+
+    </div>
+  </div>
+
+  </div>
+
+  <footer class="mi-footer">
+    <div class="texto-footer">
+      <p>&copy; Copyright - 2023. Todos los derechos reservados.</p>
+    </div>
+    <a class="link-footer" href="mailto:clubdevinos@gmail.com">
+    <div class="icon-footer">
+      <div class="icono">
+        <span class="fas fa-envelope"></span>
+      </div>
+    </a>
+    <a class="link-footer" href="https://twitter.com/">
+      <div class="icono">
+        <span class="fab fa-twitter"></span>
+      </div>
+    </a>
+      <a class="link-footer" href="https://instagram.com/">
+      <div class="icono">
+        <span class="fab fa-instagram"></span>
+      </div>
+    </a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

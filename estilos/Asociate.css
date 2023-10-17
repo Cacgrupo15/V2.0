@@ -1,0 +1,77 @@
+/*--------------------------------------------------*/
+/* contenido para pantalla media
+/*--------------------------------------------------*/
+.content {
+    height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+
+}
+
+.form-content {
+    width: 100%;
+    max-width: 450;
+    background-color: #DECBE7;
+    padding: 30px 60px 30px;
+    text-align: left;
+    border-radius: 25px;
+    text-align: right;
+    margin-right: 300px;
+    margin-left: 300px;
+
+}
+
+
+.menuAsociate {
+
+    background-color: white;
+    margin: 15px 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    font-size: large;
+    color: white;
+}
+
+
+.input-group i {
+    margin-left: 15px;
+    color: #DECBE7;
+    ;
+}
+
+
+input {
+    padding: 10px;
+    font-size: 16Px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+@media(max-width: 1024px) {
+    .form-content {
+        margin: 100px;
+    }
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 720px) {
+    .form-content {
+        margin: 20px;
+    }
+}

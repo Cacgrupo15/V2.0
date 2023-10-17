@@ -1,0 +1,208 @@
+
+
+.arriba__seccion {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Estilo anterior:
+.seccion {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #000000;
+    align-items: center;
+    background: white;
+    box-shadow: 4px 4px #82499C;
+    color: #151515;
+    border: solid 2px #151515;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+}
+*/
+
+.seccion {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #000000;
+    align-items: center;
+    background: white;
+
+    color: #151515;
+    border: solid 2px #151515;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    border: solid 3px #DECBE7;
+    border-radius: 35px;
+    width: 100%;
+    margin: 20px;
+
+}
+
+/*
+.abajo__seccion {
+    justify-content: space-between;
+    display: flex;
+    margin: 10px 10px 20px 10px;
+    align-items: center;
+    background: white;
+    z-index: 1;
+    box-shadow: 2px 2px 10px #DECBE7;
+    color: #151515;
+    border: solid 2px #151515;
+    text-decoration: none;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    border: solid 3px #DECBE7;
+    border-radius: 25px;
+    padding: 30px;
+}
+*/
+
+.abajo__seccion {
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    border: solid 3px #DECBE7;
+    border-radius: 35px;
+    align-items: center;
+    background: white;
+
+    color: #151515;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+
+}
+
+.seccion__info {
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion__info__abajo {
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+
+}
+
+.seccion__img img {
+    height: 150px;
+    width: auto;
+}
+
+.cajaimg__img {
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 13px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+iframe {
+    border-radius: 0px;
+    min-width: 300px;
+
+}
+
+.seccion__sorteo{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 35px;
+    padding: 30px;
+    margin-bottom:30px;
+    border: solid 3px #DECBE7;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #DECBE7;
+
+}
+
+.cardWinners{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+border-radius: 35px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px #82499C;
+    background-color: white;
+}
+
+
+@media(max-width: 1024px) {
+
+    .arriba__seccion {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .seccion{
+        flex-direction:row;
+    }
+
+    .cajaimg__img {
+        height: 250px;
+    }
+
+    iframe {
+
+        min-width: 0px;
+    }
+
+    .abajo__seccion {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .arriba__seccion {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .abajo__seccion {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    iframe {
+
+        min-width: 0px;
+    
+    }
+
+
+    .abajo__seccion {
+        flex-direction: column;
+    }
+
+    .seccion{
+        flex-direction:column;
+    }
+
+
+
+
+
+}
+

@@ -1,0 +1,128 @@
+
+/* Defino items del contenedor */
+.vinos-titulopagina {
+    grid-area: vinos-titulopagina;
+}
+
+.vinos-titulobodega {
+    grid-area: vinos-titulobodega;
+}
+
+.vinos-imagenbodega {
+    grid-area: vinos-imagenbodega;
+    text-align: center;
+    align-items: center;
+}
+
+.vinos-vino1 {
+    grid-area: vinos-vino1;
+}
+
+.vinos-vino2 {
+    grid-area: vinos-vino2;
+}
+
+.vinos-vino3 {
+    grid-area: vinos-vino3;
+}
+
+/* Defino estilos del contenedor para desktop */
+.container-vinos {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "vinos-bodega vinos-bodega vinos-bodega"
+        "vinos-vino1 vinos-vino2 vinos-vino3";
+}
+
+.vinos-bodega {    
+    display: flex;
+    flex-direction: row;
+    background-color: #DECBE7;
+    border-radius: 25px;
+    padding: 30px;
+    margin:20px;
+    grid-area: vinos-bodega;
+}
+
+
+/* Defino estilos del contenedor para tablet */
+@media(max-width: 1024px) {
+    .container-vinos {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "vinos-bodega vinos-bodega vinos-bodega"
+            "vinos-vino1 vinos-vino2 vinos-vino3";
+    }
+
+    .vinos-bodega {    
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Defino estilos del contenedor para mobile */
+@media(max-width: 720px) {
+    .container-vinos {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "vinos-bodega"
+            "vinos-vino1"
+            "vinos-vino2"
+            "vinos-vino3";
+    }
+}
+
+
+/* Estilos para la tarjeta de vino */
+.tarjeta-vino {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    box-shadow: 2px 2px 10px #82499C;
+    border: solid 2px #151515;
+    text-decoration: none;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    overflow: hidden;
+    border: solid 3px #DECBE7;
+    border-radius: 35px;
+    padding: 10px;
+}
+
+.tarjeta-vino-imagen-container {
+    flex: 1;
+    position: relative;
+    padding: 10px;
+}
+
+.tarjeta-vino-imagen-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tarjeta-vino-contenido {
+    flex: 2;
+    text-align: left;
+    align-items: center;
+}
+
+.vinos-imagenbodega { 
+    margin: 20px;
+}
+
+.vinos-titulobodega{ 
+    margin: 20px;
+}
