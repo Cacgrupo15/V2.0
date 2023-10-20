@@ -16,10 +16,10 @@ const setAward = (posicion, winner) => {
       winner.premio = "Visita a bodega Zuccardi";
       break;
     case 1:
-      winner.premio = "Visita a bodega Zuccardi";
+      winner.premio = "1 vino bodega Zuccardi";
       break;
     case 2:
-      winner.premio = "Visita a bodega Zuccardi";
+      winner.premio = "Vaucher de descuento";
       break;
     default:
       winner.premio = null;

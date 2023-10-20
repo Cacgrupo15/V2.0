@@ -22,7 +22,7 @@
 
   <header>
     <div class="header-logo">
-      <a href="Home.html">
+      <a href="index.html">
         <img src="img/grape.png" alt="">
       </a>
     </div>
@@ -45,33 +45,33 @@
 
     <div class="form-content">
 
-      <form autocomplete="none" name="validation">
+      <form autocomplete="none" name="validation" id="formulario">
 
         <div class="input-group">
           <div class="menuAsociate">
             <i class="fa-solid fa-user"></i>
-            <input type="text" name="nombre" maxlength="50" placeholder="Nombre">
+            <input type="text" id="nombre"  name="nombre" maxlength="50" placeholder="Nombre">
           </div>
           <div class="menuAsociate">
             <i class="fa-solid fa-user"></i>
-            <input type="text" name="apellido" maxlength="50" placeholder="Apellido">
+            <input type="text" id="apellido"  name="apellido" maxlength="50" placeholder="Apellido">
           </div>
           <div class="menuAsociate">
             <i class="fa-solid fa-drivers-license"></i>
-            <input type="text" name="dni" maxlength="18" placeholder="DNI">
+            <input type="number" id="dni" required name="dni" min="1" max="99999999" placeholder="DNI">
           </div>
         
           <div class="menuAsociate">
             <i class="fa-solid fa-mail-bulk"></i>
-            <input type="mail" placeholder="Correo electrónico">
+            <input type="text"  id="email" placeholder="Correo electrónico">
           </div>
           <div class="menuAsociate">
             <i class="fa-solid fa-phone-square"></i>
-            <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required>
+            <input type="tel" id="telefono" name="telefono" placeholder="11 2222 3333" >
           </div>
         </div>
         <div class="btn-sec">
-          <input type="button" value="Enviar" onclick="validateShipment()">
+          <input type="submit" id="botonEnviar" value="Enviar">
         </div>
 
       </form>
@@ -105,8 +105,8 @@
     </a>
     </div>
   </footer>
-
-  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./script/asociate.js"></script>
 
 </body>
 
