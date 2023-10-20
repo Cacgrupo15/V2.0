@@ -12,7 +12,7 @@ function validateShipment() {
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: "Por favor escriba su apellido completo",
+        text: "Por favor escriba su Nombre completo",
       })
     document.validation.nombre.focus();
     return;
@@ -22,7 +22,7 @@ function validateShipment() {
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: "Por favor escriba su apellido completo",
+        text: "Por favor escriba su Apellido completo",
       })
     document.validation.apellido.focus();
     return;
@@ -55,7 +55,7 @@ function validateShipment() {
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: "Por favor ingrese un telefono valido, puede ser que te falte un numero en tu telefono.",
+        text: "Por favor ingrese un telefono valido.",
       })
     telefonoInput.focus();
     return;
@@ -69,7 +69,18 @@ function validateShipment() {
     telefonoInput.focus();
     return;
   }
-  
+  Swal.fire({
+    icon: 'success',
+    title: 'Gracias',
+    text: "En breve un administrador del Club se pondra en contacto contigo.",
+    showConfirmButton: false,
+    timer: 2000
+  })
+  nombreInput.value = ""
+  apellidoInput.value = ""
+  dniInput.value = ""
+  emailInput.value = ""
+  telefonoInput.value = ""
 }
 
 if (telefonoInput) {
